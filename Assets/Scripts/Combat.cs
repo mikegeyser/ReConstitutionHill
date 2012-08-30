@@ -18,7 +18,7 @@ public class Combat : MonoBehaviour {
 		
 		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(ray, out hit,Mathf.Infinity, LayerMask.value))
+        if (Physics.Raycast(ray, out hit,1000, LayerMask.value))
 		{
 			Vector3 travelVector =  hit.point - transform.position;
 			Vector3 rotation = new Vector3(0,(Mathf.Atan2(travelVector.z,travelVector.x)* -180 / Mathf.PI),0);

@@ -21,10 +21,10 @@ public class UiStats : MonoBehaviour {
         GUI.skin = UI;
 
         var sb = new StringBuilder("STATS:" + Environment.NewLine + Environment.NewLine);
-        sb.AppendLine("Speed: " + pl.Speed.ToString());
-        sb.AppendLine("Cooldown: " + pl.ROF.ToString());
-        sb.AppendLine("Damage: " + pl.Strength.ToString());
-		sb.AppendLine("Shot Speed: " + pl.ProjSpeed.ToString());
+        sb.AppendLine("Speed: " + pl.Speed);
+        sb.AppendLine("Cooldown: " + pl.ROF);
+        sb.AppendLine("Damage: " + pl.Strength);
+		sb.AppendLine("Shot Speed: " + pl.ProjSpeed);
 
         GUI.Label(new Rect(LeftOffset, Screen.height - Height - BottomOffset - Height, Width, Height), sb.ToString(), "box");
     }
