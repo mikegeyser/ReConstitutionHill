@@ -7,6 +7,8 @@ public class Combat : MonoBehaviour {
 	public float delay = 0.5f, accuracy = 0.1f;
 	private float fireTime = 0f;
 	// Use this for initialization
+    public LayerMask LayerMask;
+
 	void Start () {
 	
 	}
@@ -16,7 +18,7 @@ public class Combat : MonoBehaviour {
 		
 		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		RaycastHit hit = new RaycastHit();
-		if (Physics.Raycast(ray,out hit))
+        if (Physics.Raycast(ray, out hit,Mathf.Infinity, LayerMask.value))
 		{
 			Vector3 travelVector =  hit.point - transform.position;
 			Vector3 rotation = new Vector3(0,(Mathf.Atan2(travelVector.z,travelVector.x)* -180 / Mathf.PI),0);

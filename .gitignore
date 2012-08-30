@@ -19,3 +19,6 @@ Temp
 _Resharper*
 *.sln.DotSettings.user
 *.suo
+obj/Debug/*
+ _ReSharper.*
+*.ReSharper.user
