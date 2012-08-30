@@ -9,8 +9,17 @@
   <RecentFiles>
     <RecentFiles>
       <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Combat.cs" caret="1299" fromTop="30" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Objective.cs" caret="1583" fromTop="26" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:UiTimer.cs" caret="2141" fromTop="39" />
     </RecentFiles>
-    <RecentEdits />
+    <RecentEdits>
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Objective.cs" caret="2645" fromTop="0" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Objective.cs" caret="651" fromTop="32" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Objective.cs" caret="1068" fromTop="45" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:Objective.cs" caret="1264" fromTop="49" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:UiTimer.cs" caret="2336" fromTop="44" />
+      <File id="FF639AB9-F494-8750-7658-739C4FC44E85/d:Assets/d:Scripts/f:UiTimer.cs" caret="2273" fromTop="44" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
@@ -23,4 +32,13 @@
     </NUnitInstallDir>
     <UseAddins>Never</UseAddins>
   </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="GUILayout`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UnityEngine.GUILayout">
+      <Item value="Label`0" priority="0" />
+      <Item value="BeginScrollView`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
 </Configuration>

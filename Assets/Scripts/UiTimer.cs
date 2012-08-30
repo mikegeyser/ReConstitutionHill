@@ -58,7 +58,7 @@ public class UiTimer : MonoBehaviour
             // Pause the game
             Time.timeScale = 0;
 
-            windowRect = GUI.Window(0, windowRect, DrawDialog, objective.Title, "box");
+            windowRect = GUI.Window(0, windowRect, DrawDialog, string.Empty, "box");
         }
     }
 
@@ -68,31 +68,23 @@ public class UiTimer : MonoBehaviour
 
         if (objective == null) return;
 
-
-        //var sr = new StreamReader();
-        //var text = sr.ReadToEnd();
-        //sr.Close();
-
-        var scrollRect = new Rect(10, 50, windowRect.width - 10, windowRect.height - 50);
-        var textRect = new Rect(10, 50, windowRect.width - 50, objective.TextHeight + 50);
-        var buttonRect = new Rect(windowRect.width - 180, 50, 100, 20);
-
-        scrollPosition = GUI.BeginScrollView(
-            scrollRect,
-            scrollPosition,
-            textRect
-            );
-
-        
         var textAsset = Resources.Load(objective.File) as TextAsset;
 
-        GUI.Label(textRect, textAsset.text, "small");
-
-        if (GUI.Button(buttonRect, "Done"))
+        GUILayout.BeginHorizontal();
+        GUILayout.Label(objective.Title, "small");
+        GUILayout.FlexibleSpace();
+        if (GUILayout.Button("Done"))
         {
             Time.timeScale = timeScaleStorage;
-
             objective.SetNext();
         }
+        GUILayout.Space(50);
+        GUILayout.EndHorizontal();
+        GUILayout.Space(10);
+        scrollPosition = GUILayout.BeginScrollView(scrollPosition);
+
+        GUILayout.Label(textAsset.text, "small");
+
+        GUILayout.EndScrollView();
     }
 }

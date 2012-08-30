@@ -16,3 +16,6 @@ Temp
 *.csproj
 *.pidb
 *.sln
+_Resharper*
+*.sln.DotSettings.user
+*.suo

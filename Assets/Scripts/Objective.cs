@@ -30,7 +30,7 @@ public class Objective : MonoBehaviour
 	void Awake()
 	{
 		player = (Player)FindObjectOfType(typeof(Player));
-        print(string.Format("Objective {0} loaded timeexempt {1}: ", this.Title, TimeExempt));
+        //print(string.Format("Objective {0} loaded timeexempt {1}: ", this.Title, TimeExempt));
 	}
 
     public TimeSpan GetTimeRemaining()
@@ -42,12 +42,12 @@ public class Objective : MonoBehaviour
 
     void Update()
     {
-        print("Total milliseconds remaining:" + GetTimeRemaining().TotalMilliseconds);
-        print(string.Format("Objective {0} loaded timeexempt {1}: ", this.Title, TimeExempt));
+        //print("Total milliseconds remaining:" + GetTimeRemaining().TotalMilliseconds);
+        //print(string.Format("Objective {0} loaded timeexempt {1}: ", this.Title, TimeExempt));
 
         if (Active && !TimeExempt && GetTimeRemaining().TotalMilliseconds <= 0)
         {
-            print("End game");
+            //print("End game");
             Application.LoadLevel(0);
         }
     }
