@@ -21,10 +21,9 @@ public class MoodColouring : MonoBehaviour {
 		//gameObject.renderer.material.color = new Color(player.GetKarmaPercentage()*256,256-(256*player.GetKarmaPercentage()),0);
 		for(int i = 0; i < colors.Length; i++)
 		{
-			//print(i  * (100/(colors.Length-1)));
 			if(player.GetKarmaPercentage() <= i  * (100/(colors.Length-1)))
 			{
-				gameObject.renderer.material = colors[i];
+				gameObject.renderer.material.color = colors[i].color;
 				break;
 			}
 		}

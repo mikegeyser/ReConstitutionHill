@@ -20,13 +20,14 @@ public class Spawner : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-		if((Time.timeSinceLevelLoad >= spawnTime + initialRespawnDelay)&&(FindObjectsOfType(typeof(Enemy)).Length<MaxNumberOfEnemies))
+	void Update ()
+	{
+	    var enemies = FindObjectsOfType(typeof (Enemy));
+        if ((Time.timeSinceLevelLoad >= spawnTime + initialRespawnDelay) && (enemies.Length < MaxNumberOfEnemies))
 		{
 			spawnTime = Time.timeSinceLevelLoad;
 			float probability = initialEnemyProbability + ((100f-player.GetKarmaPercentage())*0.5f/100f); 
-			print(probability);
+			
 			GameObject enemyObj = (GameObject)Instantiate(Enemies,transform.position, Quaternion.identity);
 			Enemy enemy = (Enemy)enemyObj.GetComponent<Enemy>();
 			if(enemy==null) return;
