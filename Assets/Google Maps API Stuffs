@@ -1,7 +1,7 @@
 http://maps.googleapis.com/maps/api/staticmap?
 sensor=false
 &scale=2
-&size=1024x1024
+&size=4096x4096
 &center=Johannesburg
 &zoom=15
 
@@ -33,3 +33,24 @@ http://maps.googleapis.com/maps/api/staticmap
 &style=road.highway%7Celement:labels%7Cvisibility:off%7Csaturation:98
 &style=feature:administrative.locality%7Celement:labels%7Chue:0x0022ff%7Csaturation:50%7Clightness:-10%7Cgamma:0.9
 &style=feature:transit.line%7Celement:geometry%7Chue:0xff0000%7Cvisibility:off%7Clightness:-70
+
+
+
+
+--Final
+
+
+http://maps.googleapis.com/maps/api/staticmap?sensor=false&scale=2&size=4096x4096&center=-26.20,28.041916&zoom=15
+
+&style=feature:road.local%7Celement:labels%7Cvisibility:off
+&style=feature:road.local%7Celement:geometry%7Clightness:-100
+
+&style=feature:road.arterial%7Celement:labels%7Cvisibility:off
+&style=feature:road.arterial%7Celement:geometry%7Clightness:-100
+
+&style=feature:road.highway%7Celement:labels%7Cvisibility:off
+&style=feature:road.highway%7Celement:geometry%7Clightness:-100
+
+&style=feature:administrative.locality%7Celement:labels%7Cvisibility:off
+&style=feature:transit.line%7Celement:geometry%7Cvisibility:off
+&style=feature:transit.details%7Celement:geometry%7Cvisibility:off
